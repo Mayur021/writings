@@ -11,19 +11,10 @@
   |---|---|---|
   | 2026-06-02 | [The Decision-Rights Plane: An Architectural Gap in AI Security](2026-06-02-decision-rights-plane/) | Why the bottom two layers of
   AI security lack the right primitive, and a working method for contributing across multiple standards surfaces |
-
-  (More entries land here as the work continues.)
-
-  ## Format conventions
-
-  Each piece lives in its own folder under the repo root:
-
-  YYYY-MM-DD-short-slug/
-  ├── README.md         # long-form article
-  ├── figures/          # any diagrams or images
-  └── sources.md        # full reference list (when present)
-
-  Articles are written in markdown. Figures are PNG.
+  | 2026-06-02 | [Investigation Is Reversible. Actuation Is Not. The Architectural Floor for Agentic AI.](2026-06-02-investigation-vs-actuation/) |
+  The read/write architectural fold as design primitive; where the gate has to live; worked examples for calendar and incident-response agents |
+  | 2026-06-02 | [What I Learned Contributing Across Five Standards Surfaces in Five Months](2026-06-02-contributing-across-standards-surfaces/) |
+  Observations from cross-surface community standards contribution; anti-patterns to avoid; a one-week starter plan for new contributors |
 
   ## License
 
