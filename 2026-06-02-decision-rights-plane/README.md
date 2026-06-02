@@ -1,6 +1,8 @@
-# The Decision-Rights Plane: An Architectural Gap in AI Security
+ # The Decision-Rights Plane: An Architectural Gap in AI Security
 
-**Date**: June 2, 2026
+  *The missing architectural primitive at layers 4 and 5 of AI security: manifest-declared action class, deterministic gate, worst-case chain rule.*
+
+  **Date**: June 2, 2026
 **Author**: Mayur Agnihotri
 **Reading time**: ~10 minutes
 
