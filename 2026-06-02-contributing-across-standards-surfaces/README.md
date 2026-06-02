@@ -1,5 +1,8 @@
 # What I Learned Contributing Across Five Standards Surfaces in Five Months
 
+  *Five months of community standards work on agentic AI security: maintainer dynamics, vocabulary, issue-before-PR, prior art, reference
+  implementations.*
+
 **Date**: June 2, 2026
 **Author**: Mayur Agnihotri
 **Reading time**: ~9 minutes
