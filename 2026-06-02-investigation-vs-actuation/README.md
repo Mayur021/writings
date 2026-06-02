@@ -1,5 +1,7 @@
 # Investigation Is Reversible. Actuation Is Not. The Architectural Floor for Agentic AI.
 
+  *Investigation is reversible. Actuation is not. The read/write architectural fold as design primitive for agentic AI security. Where the gate lives.*
+
 **Date**: June 2, 2026
 **Author**: Mayur Agnihotri
 **Reading time**: ~8 minutes
