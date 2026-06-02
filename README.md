@@ -7,11 +7,17 @@
 
   ## Index
 
-  | Date | Title | Topic |
-  |---|---|---|
-  | 2026-06-02 | [The Decision-Rights Plane](2026-06-02-decision-rights-plane/) | Missing primitive at layers 4 and 5 |
-  | 2026-06-02 | [Investigation Is Reversible. Actuation Is Not.](2026-06-02-investigation-vs-actuation/) | The read/write architectural fold |
-  | 2026-06-02 | [What I Learned Contributing Across Five Standards Surfaces](2026-06-02-contributing-across-standards-surfaces/) | The  cross-surface contributor method |
+  ### 2026-06-02 — [The Decision-Rights Plane: An Architectural Gap in AI Security](2026-06-02-decision-rights-plane/)
+
+  Why the bottom two layers of AI security lack the right primitive, and a working method for contributing across multiple standards surfaces.
+
+  ### 2026-06-02 — [Investigation Is Reversible. Actuation Is Not. The Architectural Floor for Agentic AI.](2026-06-02-investigation-vs-actuation/)
+
+  The read/write architectural fold as design primitive; where the gate has to live; worked examples for calendar and incident-response agents.
+
+  ### 2026-06-02 — [What I Learned Contributing Across Five Standards Surfaces in Five Months](2026-06-02-contributing-across-standards-surfaces/)
+
+  Observations from cross-surface community standards contribution; anti-patterns to avoid; a one-week starter plan for new contributors.
 
   ## License
 
@@ -27,5 +33,3 @@
   - [aisvs-action-class-reference](https://github.com/Mayur021/aisvs-action-class-reference): manifest-declared action class and worst-case chain
   rule.
   - [nhi-runtime-decision-rights](https://github.com/Mayur021/nhi-runtime-decision-rights): non-human identity runtime decision-rights.
-
-  ---
