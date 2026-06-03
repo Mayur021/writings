@@ -79,6 +79,10 @@ Five surfaces. Verification standard (AISVS). Production-verification standard (
 
 The convergence is not coordination. The five surfaces have different authors, different review processes, different anchors. They converge because the primitive is load-bearing under independent analysis.
 
+![Figure 1: Five Surfaces, One Primitive](figures/fig1_five_surfaces.png)
+
+*Figure 1. Five independent standards-track and executive-framework surfaces converging on the same architectural primitive. The convergence is the signal.*
+
 ---
 
 ## A worked example: the multi-step incident response chain
@@ -109,6 +113,10 @@ Second, the audit record for this chain has the four fields. Chain identifier ti
 A reviewer two months later asks "was the disable-account decision on June 3 within scope." The per-step log says "this step was a permitted API call." The chain-level audit record says "the chain was declared irreversible at start, was approved by the named human on the evidence presented, and proceeded to the irreversible steps with that approval as authority." The reviewer can reconstruct the authorization question because the audit captures the chain-level decision, not just the per-step API call.
 
 Per-step authorization gives the first answer. Chain rule plus chain-level audit gives the second answer. The second is the one the reviewer needs.
+
+![Figure 2: Per-Step Authorization vs Chain Authorization](figures/fig2_chain_gap.png)
+
+*Figure 2. The same eight-step chain under two governance rules. Per-step authorization permits every step locally; the chain reaches an irreversible outcome without ratification. Chain authorization declares the worst-case class at chain start and gates the chain before it runs.*
 
 ---
 
