@@ -2,7 +2,7 @@
 
   *Investigation is reversible. Actuation is not. The read/write architectural fold as design primitive for agentic AI security. Where the gate lives.*
 
-**Date**: June 2, 2026
+**Date**: May 30, 2026
 **Author**: Mayur Agnihotri
 **Reading time**: ~8 minutes
 
