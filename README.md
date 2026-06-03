@@ -7,11 +7,11 @@
 
   ## Index
 
-  ### 2026-06-02 — [The Decision-Rights Plane: An Architectural Gap in AI Security](2026-06-02-decision-rights-plane/)
+  ### 2026-05-22 — [The Decision-Rights Plane: An Architectural Gap in AI Security](2026-06-02-decision-rights-plane/)
 
   Why the bottom two layers of AI security lack the right primitive, and a working method for contributing across multiple standards surfaces.
 
-  ### 2026-06-02 — [Investigation Is Reversible. Actuation Is Not. The Architectural Floor for Agentic AI.](2026-06-02-investigation-vs-actuation/)
+  ### 2026-05-30 — [Investigation Is Reversible. Actuation Is Not. The Architectural Floor for Agentic AI.](2026-06-02-investigation-vs-actuation/)
 
   The read/write architectural fold as design primitive; where the gate has to live; worked examples for calendar and incident-response agents.
 
