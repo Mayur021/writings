@@ -5,19 +5,19 @@
   Short canonical versions land first on third-party publications (newsletters, magazines, preprint servers). This repo is the long-form home: full
   version of each piece with every citation, every figure, every example that the short version had to drop.
 
-  ## Index
+## Index
 
-  ### 2026-05-22 — [The Decision-Rights Plane: An Architectural Gap in AI Security](2026-06-02-decision-rights-plane/)
-
-  Why the bottom two layers of AI security lack the right primitive, and a working method for contributing across multiple standards surfaces.
-
-  ### 2026-05-30 — [Investigation Is Reversible. Actuation Is Not. The Architectural Floor for Agentic AI.](2026-06-02-investigation-vs-actuation/)
-
-  The read/write architectural fold as design primitive; where the gate has to live; worked examples for calendar and incident-response agents.
-
-  ### 2026-06-02 — [What I Learned Contributing Across Five Standards Surfaces in Five Months](2026-06-02-contributing-across-standards-surfaces/)
-
-  Observations from cross-surface community standards contribution; anti-patterns to avoid; a one-week starter plan for new contributors.
+  - **June 3, 2026** — [Per-Step Authorization Is Not Chain Authorization. The Worst-Case Action Class
+  Primitive.](2026-06-03-chain-authorization-convergence/) — Five independent standards-track and executive-framework surfaces converging on a
+  shared architectural primitive: manifest plus deterministic gate plus chain rule plus four-field audit schema.
+  - **June 2, 2026** — [What I Learned Contributing Across Five Standards Surfaces in Five
+  Months](2026-06-02-contributing-across-standards-surfaces/) — Maintainer dynamics, vocabulary, issue-before-PR, prior art, reference
+  implementations across OWASP AISVS / SPVS / Cornucopia / GenAI ASI and CSA NHI.
+  - **May 30, 2026** — [Investigation Is Reversible. Actuation Is Not. The Architectural Floor for Agentic
+  AI.](2026-06-02-investigation-vs-actuation/) — The read/write architectural fold as design primitive: where the gate lives, why the asymmetry is
+  binary not gradient.
+  - **May 22, 2026** — [The Decision-Rights Plane: An Architectural Gap in AI Security](2026-06-02-decision-rights-plane/) — Why the bottom two
+  layers of AI security lack the right primitive, and how to contribute to closing the gap across standards surfaces.
 
   ## License
 
