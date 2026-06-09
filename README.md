@@ -7,6 +7,7 @@
 
 ## Index
 
+ - **June 9, 2026** — [Action-Class Authority for AI Agents: A Verification-Side Reference](https://github.com/Mayur021/action-class-authority) — Whitepaper v1.0 (~28 pages, 18 chapters). Four-class reversibility taxonomy, manifest-declared classification, worst-case chain rule. Anchored in OWASP AISVS C9.2.6 + C9.2.7 (proposed for 1.01). Standalone repo.
   - **June 3, 2026** — [Per-Step Authorization Is Not Chain Authorization. The Worst-Case Action Class
   Primitive.](2026-06-03-chain-authorization-convergence/) — Five independent standards-track and executive-framework surfaces converging on a
   shared architectural primitive: manifest plus deterministic gate plus chain rule plus four-field audit schema.
