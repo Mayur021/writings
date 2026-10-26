@@ -65,7 +65,7 @@ This makes the audit-trail design downstream of the chain-rule design. If you ad
 
 This primitive is appearing in independent standards-track and executive-framework work. The convergence is itself a signal. Five surfaces, four organizations, framing the same architectural floor.
 
-**OWASP AISVS, C9 research chapter, requirements proposed for v1.01.** C9.2.6 specifies that the gate evaluation runs against the manifest, not against agent-produced runtime claims. C9.2.7 specifies that the chain's worst-case action class governs the chain. These two together are the verification-side specification of the manifest-and-gate primitive.
+**OWASP AISVS, C9 Orchestration & Agentic Security, shipped in v1.0.** C9.2.3 specifies a trusted reversibility classification, implemented here as a publisher-declared manifest rather than agent-produced runtime claims, and C9.2.4 requires the runtime to enforce it. C9.2.10 specifies that the chain's worst-case action class governs the chain. Together they are the verification-side specification of the manifest-and-gate primitive.
 
 **OWASP SPVS, V1.3.7, in active review.** This requirement places the NHI runtime decision-rights specification inside the Software Production Verification Standard for pipeline-side non-human identities. PR #15 is open against the SPVS repository. The pipeline-side decision-rights work is the standards-track placement of the runtime gate at the build and deployment surface.
 
