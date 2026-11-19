@@ -8,7 +8,7 @@
 
 ## TL;DR
 
-Two sentences appear in nearly every security operations product claim. "Three thousand detections out of the box." "Autonomous triage." Neither can be shown to be false, because neither says anything a measurement could contradict. A detection count says nothing about which detections can fire against the data a particular pipeline actually populates. An autonomy label says nothing about what runs unattended, what waits for approval, and who verified either. The falsifiable versions of both claims exist. For coverage, it is the count of enabled rules whose required fields are populated in this environment, and across published vendor documentation only one product ships that number, with the practice itself written up as guidance by another. For autonomy, it is a position on a ladder from manual to end to end, declared separately from whether the capability is generally available and separately again from who observed it working. The standards cannot yet express the second one: a 291 control pipeline verification standard published this month requires human approval for irreversible operations and says nothing about how a system decides which operations are irreversible.
+Two sentences appear in nearly every security operations product claim. "Three thousand detections out of the box." "Autonomous triage." Neither can be shown to be false, because neither says anything a measurement could contradict. A detection count says nothing about which detections can fire against the data a particular pipeline actually populates. An autonomy label says nothing about what runs unattended, what waits for approval, and who verified either. The falsifiable versions of both claims exist. For coverage, it is the count of enabled rules whose required fields are populated in this environment, a number the practice has been written up as guidance but which no vendor publishes in a form a buyer can hold them to. For autonomy, it is a position on a ladder from manual to end to end, declared separately from whether the capability is generally available and separately again from who observed it working. The standards cannot yet express the second one: a 291 control pipeline verification standard published this month requires human approval for irreversible operations and says nothing about how a system decides which operations are irreversible.
 
 ---
 
@@ -34,17 +34,15 @@ The same applies one level up. MITRE ATT&CK coverage is routinely published as a
 
 ---
 
-## The industry has already written the problem down
+## The measurement is describable and undescribed
 
-This is not an unknown gap waiting to be discovered. It has been described precisely, in public, by people selling into the same market.
+This is not an unknown gap waiting to be discovered. The mechanism has been stated plainly in public detection-engineering guidance: a rule can parse cleanly, reference valid fields, and still return zero matches, because the field it keys on is empty, or renamed, or has changed meaning. The remedy in that guidance is a fire rate baseline per rule and a required field null rate monitored continuously.
 
-SOC Prime's guidance on detection validation and decay states the mechanism directly: a rule can parse cleanly and reference valid fields and still return zero matches, because the field it keys on is empty, or renamed, or has changed meaning. Their recommended checklist includes a fire rate baseline per rule and a required field null rate monitored continuously. That is the right measurement, described by a vendor, as advice to practitioners.
+So the measurement is not hard to describe, and it is not controversial. Write down, for each enabled rule, the fields it requires. Check, over a recent window, whether those fields are populated in the events arriving. Report the count of rules that can fire and the names of the fields blocking the rest. Nothing in that is novel, and any product that parses its own telemetry already holds both halves.
 
-Exabeam ships the closest thing to it that appears in published product documentation. Outcomes Navigator counts a rule as satisfied when every field it requires has been actively parsed in the past thirty days, where actively parsed means a parser used in that window. Rules declare their required fields as attributes. Coverage credit goes only to satisfied rules, and scores recalculate at least daily.
+What is missing is the number appearing where a buyer can use it. A product may compute this internally, surface it in a console, or describe it to an analyst. None of that is a published figure a buyer can put in a requirement, compare between vendors, or hold anyone to afterwards. A metric that exists only inside a deployment cannot do the job the catalogue count is currently doing badly, which is telling a buyer what they are getting before they have it.
 
-Two details in that documentation are worth more than the feature. The first is that Exabeam distinguishes satisfied from firing, and says so: a rule with every required field present may still not trigger, because event builder conditions, model convergence or rule dependencies are unmet. The second is that roughly ten percent of Advanced Analytics rules carry session end or sequence end expressions and are excluded from the calculation as unsupported, with correlation rule coverage described as approximate. A vendor publishing the limits of its own metric is doing something rarer than publishing the metric.
-
-Set those two together and the state of the field is clear. The measurement has been articulated as guidance. One product documents a version of it. Across published vendor documentation, no other source presents per rule field population, the share of events in which a rule's required fields are non null, as a formal coverage measure. Products may compute it without publishing it; what is missing is the number appearing where a buyer can hold a vendor to it.
+There is one further honesty worth asking for. Having the required fields present is not the same as firing: a rule can be fed and still not trigger because a threshold, a sequence condition, or a model dependency is unmet. A coverage figure that quietly conflates the two is a better number than the catalogue count and still not the truth. A vendor publishing the limits of its own metric is doing something rarer than publishing the metric.
 
 ---
 
@@ -105,10 +103,6 @@ A vendor whose claims cannot be contradicted by ground truth is not necessarily 
 ## Sources
 
 - SecOps Unpacked, AI SecOps Evaluation Framework v3.2.0, framework guide. Delivery, autonomy and evidence vocabulary; the five point autonomy ladder; the statement that autonomy is not an LLM only score. https://secops-unpacked.ai/asef/guide
-- Exabeam, Outcomes Navigator documentation, coverage calculation. Satisfied rules, required fields actively parsed in the past thirty days, the satisfied versus firing distinction, and the unsupported rule exclusion. https://docs.exabeam.com/en/outcomes-navigator/all/outcomes-navigator-guide/outcomes-navigator-coverage-calculation.html
-- Exabeam, Outcomes Navigator, Advanced Analytics rules coverage calculation. https://docs.exabeam.com/en/outcomes-navigator/all/outcomes-navigator-guide/outcomes-navigator-coverage-calculation/advanced-analytics-rules-coverage-calculation.html
-- Exabeam, Outcomes Navigator, correlation rules coverage calculation. https://docs.exabeam.com/en/outcomes-navigator/all/outcomes-navigator-guide/outcomes-navigator-coverage-calculation/correlation-rules-coverage-calculation.html
-- SOC Prime, "Detection Validation and Decay: Stop Silent Failures". Fire rate baseline and required field null rate as a continuous check. https://socprime.com/blog/detection-validation-and-decay/
 - OWASP Secure Pipeline Verification Standard (SPVS) 2.0, consolidated requirements, requirement 5.6.1 and the blast radius controls. https://github.com/OWASP/www-project-spvs
 - OWASP AISVS, chapter C9, requirements 9.2.1, 9.2.3, 9.2.4 and 9.2.10, for the reversibility classification argument. https://github.com/OWASP/AISVS
 
