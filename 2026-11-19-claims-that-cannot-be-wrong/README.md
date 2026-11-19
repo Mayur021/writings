@@ -96,7 +96,7 @@ Three questions, none of which requires technical access to answer, and all of w
 
 **What is the highest evidence level behind each capability claim, and which of them is only a demonstration.** Not to catch anyone out. To know which parts of the deployment are a forecast.
 
-A vendor whose claims cannot be contradicted by ground truth is not necessarily exaggerating. They may be using the only vocabulary the market has offered them. The vocabulary exists now, in an evaluation framework that separates delivery from autonomy from evidence, and in one product's documentation that counts rules by whether their fields are parsed. What is missing is the expectation that a claim should be the kind of thing that could turn out to be false.
+A vendor whose claims cannot be contradicted by ground truth is not necessarily exaggerating. They may be using the only vocabulary the market has offered them. The vocabulary exists now, in an evaluation framework that separates delivery from autonomy from evidence, and in a measurement any product parsing its own telemetry could publish tomorrow. What is missing is the expectation that a claim should be the kind of thing that could turn out to be false.
 
 ---
 
