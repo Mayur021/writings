@@ -7,6 +7,7 @@
 
 ## Index
 
+ - **November 19, 2026** — [Two Claims That Cannot Be Wrong](2026-11-19-claims-that-cannot-be-wrong/) — A detection count and an autonomy label are the two numbers the security operations market runs on, and neither can be contradicted by evidence. The falsifiable versions exist: enabled rules whose required fields are populated here, and a position on a five point autonomy ladder declared separately from delivery and from evidence. One product publishes the first. A 291 control standard requires approval for irreversible operations without defining irreversibility.
  - **October 13, 2026** — [What the Agentic Governance Frameworks Actually Bound](2026-10-13-what-agentic-frameworks-bound/) — Seven principles, five dispositions, one receipt format and one identity standard, measured against one question: does the control bound a step or a sequence? RFC 8693 records the delegation chain in nested act claims and then excludes it from the access control decision.
  - **June 9, 2026** — [Action-Class Authority for AI Agents: A Verification-Side Reference](https://github.com/Mayur021/action-class-authority) — Whitepaper v1.0 (~28 pages, 18 chapters). Four-class reversibility taxonomy, manifest-declared classification, worst-case chain rule. Anchored in OWASP AISVS C9.2.3, C9.2.4 and C9.2.10, shipped in v1.0. Standalone repo.
   - **June 3, 2026** — [Per-Step Authorization Is Not Chain Authorization. The Worst-Case Action Class
